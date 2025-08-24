@@ -20,6 +20,20 @@ npm install
 npm run dev
 ```
 
+### Run directly via curl (GitHub Raw)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/magyarg-pine/cookbooks/refs/heads/main/client/create-react-project.sh | bash -s -- my-app
+```
+
+### Download locally via curl, then run
+
+```bash
+curl -fsSLo create-react-project.sh https://raw.githubusercontent.com/magyarg-pine/cookbooks/refs/heads/main/client/create-react-project.sh
+chmod +x create-react-project.sh
+./create-react-project.sh my-app
+```
+
 - The script is non-interactive. It uses `vite --template react-ts` and proceeds without prompts.
 - Re-running the script with the same `my-app` name is supported; it only adds missing scripts and files where safe.
 
